@@ -1,5 +1,5 @@
-import { Box, BoxProps, Center, Flex, Grid, Heading, Spacer, Stack, Text} from '@chakra-ui/layout';
-import { Image } from "@chakra-ui/react";
+import { Box, BoxProps, Center, Flex, Grid, Heading, Spacer, Stack, Text } from '@chakra-ui/layout';
+import { Image, Button } from "@chakra-ui/react";
 
 
 
@@ -28,9 +28,11 @@ export default function Home() {
                 </Box>
                 
                 <Text fontSize="20" fontFamily="Gotham-Bold" color="#4F60B6" mb={4}>Promotional Web Page</Text>
-                <Text fontSize="16" fontFamily="Gotham-Book">Users will have at their disposal an online space, where they can select and buy entrance tickets, 
+                <Text fontSize="16" fontFamily="Gotham-Book">
+                  Users will have at their disposal an online space, where they can select and buy entrance tickets, 
                   and get all the necessary information about the event. Access to registration and attendance confirmation 
-                  will also be contemplated.</Text>
+                  will also be contemplated.
+                  </Text>
 
               </Box>            
           </Box>
@@ -42,10 +44,10 @@ export default function Home() {
                   <path id="Caminho_1" data-name="Caminho 1" d="M675,904.023a3.849,3.849,0,0,1-3.06-1.2,4.337,4.337,0,0,1-2.96,1.2,3.606,3.606,0,0,1-3.661-3.861,4.833,4.833,0,0,1,4.48-5.021,3.194,3.194,0,0,1,2.761,1.36l.221-1.06,2.36.38L674.2,901.2a3.586,3.586,0,0,0-.059.62,1.292,1.292,0,0,0,1.46,1.261c1.42,0,2.54-1.421,2.54-4.081,0-3.7-3.38-7.122-7.881-7.122a7.942,7.942,0,1,0,.159,15.883,8.987,8.987,0,0,0,4.9-1.34l.4.64a9.8,9.8,0,0,1-5.3,1.5,8.743,8.743,0,1,1-.159-17.484c4.9,0,8.722,3.821,8.722,7.922C678.986,902.343,677.205,904.023,675,904.023Zm-4.8-6.822a2.627,2.627,0,0,0-2.4,2.821,1.781,1.781,0,0,0,1.881,1.94,2.672,2.672,0,0,0,2.38-2.88A1.781,1.781,0,0,0,670.2,897.2Z" transform="translate(-648.966 -865.458)" fill="#4f60b6"/>
                   <rect id="Retângulo_38" data-name="Retângulo 38" width="40.556" height="69.495" rx="7.33" transform="translate(1 2.422)" fill="none" stroke="#4d63c3" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
                   <line id="Linha_14" data-name="Linha 14" x2="19.707" transform="translate(11.424 66.125)" fill="none" stroke="#4d63c3" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
-                  <path id="Caminho_91" data-name="Caminho 91" d="M733.718,866.458H703.774a3.388,3.388,0,0,0-3.388,3.388v19.648l8.188-7.178h25.144a3.388,3.388,0,0,0,3.388-3.388v-9.082A3.388,3.388,0,0,0,733.718,866.458Z" transform="translate(-648.966 -865.458)" fill="none" stroke="#4d63c3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-                  <circle id="Elipse_13" data-name="Elipse 13" cx="1.588" cy="1.588" r="1.588" transform="translate(58.306 7.672)" fill="none" stroke="#4d63c3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-                  <circle id="Elipse_14" data-name="Elipse 14" cx="1.588" cy="1.588" r="1.588" transform="translate(67.156 7.672)" fill="none" stroke="#4d63c3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-                  <circle id="Elipse_15" data-name="Elipse 15" cx="1.588" cy="1.588" r="1.588" transform="translate(76.403 7.672)" fill="none" stroke="#4d63c3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                  <path id="Caminho_91" data-name="Caminho 91" d="M733.718,866.458H703.774a3.388,3.388,0,0,0-3.388,3.388v19.648l8.188-7.178h25.144a3.388,3.388,0,0,0,3.388-3.388v-9.082A3.388,3.388,0,0,0,733.718,866.458Z" transform="translate(-648.966 -865.458)" fill="none" stroke="#4d63c3" stroke-linecap="round" strokeLinejoin="round" stroke-width="2"/>
+                  <circle id="Elipse_13" data-name="Elipse 13" cx="1.588" cy="1.588" r="1.588" transform="translate(58.306 7.672)" fill="none" stroke="#4d63c3" stroke-linecap="round" strokeLinejoin="round" stroke-width="2"/>
+                  <circle id="Elipse_14" data-name="Elipse 14" cx="1.588" cy="1.588" r="1.588" transform="translate(67.156 7.672)" fill="none" stroke="#4d63c3" stroke-linecap="round" strokeLinejoin="round" stroke-width="2"/>
+                  <circle id="Elipse_15" data-name="Elipse 15" cx="1.588" cy="1.588" r="1.588" transform="translate(76.403 7.672)" fill="none" stroke="#4d63c3" stroke-linecap="round" strokeLinejoin="round" stroke-width="2"/>
                 </svg>
               </Box>
 
@@ -86,11 +88,10 @@ export default function Home() {
           <Box w="60%">
             <Box mb={14} w={[300, 400, 500]}>
                 <Box mb={6}> 
-                <svg xmlns="http://www.w3.org/2000/svg" width="43.416" height="66.942" viewBox="0 0 43.416 66.942">
-                  <circle id="Elipse_16" data-name="Elipse 16" cx="16.504" cy="16.504" r="16.504" transform="translate(5.204 1)" fill="none" stroke="#4d63c3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-                  <path id="Retângulo_43" data-name="Retângulo 43" d="M16.1,0h9.208a16.1,16.1,0,0,1,16.1,16.1V31.935a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V16.1A16.1,16.1,0,0,1,16.1,0Z" transform="translate(1 34.007)" fill="none" stroke="#4d63c3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-                </svg>
-
+                  <svg xmlns="http://www.w3.org/2000/svg" width="43.416" height="66.942" viewBox="0 0 43.416 66.942">
+                    <circle id="Elipse_16" data-name="Elipse 16" cx="16.504" cy="16.504" r="16.504" transform="translate(5.204 1)" fill="none" stroke="#4d63c3" stroke-linecap="round" strokeLinejoin="round" stroke-width="2"/>
+                    <path id="Retângulo_43" data-name="Retângulo 43" d="M16.1,0h9.208a16.1,16.1,0,0,1,16.1,16.1V31.935a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V16.1A16.1,16.1,0,0,1,16.1,0Z" transform="translate(1 34.007)" fill="none" stroke="#4d63c3" stroke-linecap="round" strokeLinejoin="round" stroke-width="2"/>
+                  </svg>
                 </Box>
 
                 <Text fontSize="20" fontFamily="Gotham-Bold" color="#4F60B6" mb={4}>Guest and attendance</Text>
@@ -323,6 +324,26 @@ export default function Home() {
                 </Box>          
               </Box>
           </Grid>
+          
+        </Box>
+
+        <Box bg="#EAEAEA" w="100%" p={4}>
+          <Heading mt={20} mb={6} align="center" fontSize="40" fontFamily="SegoeUi, Segoe UI" color="#4f60b6">CAN'T FIND WHAT YOU ARE LOOKING FOR?</Heading>
+          <Center>
+            <Box mb={12} w={[300, 400, 500]}>
+              <Text fontSize={{ base: "10", md: "12", lg: "16" }} fontFamily="Gotham-Book" mb={4} align="center">
+              No problem. Custom-Made Is the best way to go! <br/> Just tell us what you need! We love challenges and great ideas.
+              </Text>
+            </Box>
+          </Center>
+
+          <Box mb={16}>
+            <Center>
+              <Button borderRadius="40px" height="48px" width="200px" color="white" bgColor="#4F60B6">Talk to us</Button>
+            </Center>  
+          </Box>  
+          
+
           
         </Box>
       </Box>
