@@ -1,6 +1,5 @@
 import { Box, BoxProps, Center, Flex, Grid, Heading, Spacer, Stack, Text} from '@chakra-ui/layout';
 import { Image } from "@chakra-ui/react";
-import IconUmbrella from '../components/iconPromotional';
 
 
 
@@ -14,10 +13,10 @@ export default function Home() {
       
       <Box>
         <Heading mt={20} mb={20} align="center" fontSize="40" fontFamily="SegoeUi, Segoe UI" color="#4f60b6">Includes the following</Heading>
+        
         <Grid templateColumns="repeat(2, 1fr)" gap={6}>
           <Box w="60%">
-            
-              <Box mb={14}>
+              <Box mb={14} w={[300, 400, 500]}>
                 <Box mb={6}>
                   <svg xmlns="http://www.w3.org/2000/svg" width="76.28" height="53.913" viewBox="0 0 76.28 53.913" mb={4}>
                     <rect id="Retângulo_37" data-name="Retângulo 37" width="74.28" height="51.913" rx="3.388" transform="translate(1 1)" fill="none" stroke="#4d63c3" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
@@ -29,17 +28,15 @@ export default function Home() {
                 </Box>
                 
                 <Text fontSize="20" fontFamily="Gotham-Bold" color="#4F60B6" mb={4}>Promotional Web Page</Text>
-                <Text fontSize="16" fontFamily="Gotham-Book">
-                  Users will have at their disposal an online space, where they can select and buy entrance tickets, 
+                <Text fontSize="16" fontFamily="Gotham-Book">Users will have at their disposal an online space, where they can select and buy entrance tickets, 
                   and get all the necessary information about the event. Access to registration and attendance confirmation 
-                  will also be contemplated.
-                </Text>
+                  will also be contemplated.</Text>
+
               </Box>            
           </Box>
           
           <Box w="60%">
-
-            <Box mb={14}>
+            <Box mb={14} w={[300, 400, 500]}>
               <Box mb={6}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="89.14" height="72.917" viewBox="0 0 89.14 72.917">
                   <path id="Caminho_1" data-name="Caminho 1" d="M675,904.023a3.849,3.849,0,0,1-3.06-1.2,4.337,4.337,0,0,1-2.96,1.2,3.606,3.606,0,0,1-3.661-3.861,4.833,4.833,0,0,1,4.48-5.021,3.194,3.194,0,0,1,2.761,1.36l.221-1.06,2.36.38L674.2,901.2a3.586,3.586,0,0,0-.059.62,1.292,1.292,0,0,0,1.46,1.261c1.42,0,2.54-1.421,2.54-4.081,0-3.7-3.38-7.122-7.881-7.122a7.942,7.942,0,1,0,.159,15.883,8.987,8.987,0,0,0,4.9-1.34l.4.64a9.8,9.8,0,0,1-5.3,1.5,8.743,8.743,0,1,1-.159-17.484c4.9,0,8.722,3.821,8.722,7.922C678.986,902.343,677.205,904.023,675,904.023Zm-4.8-6.822a2.627,2.627,0,0,0-2.4,2.821,1.781,1.781,0,0,0,1.881,1.94,2.672,2.672,0,0,0,2.38-2.88A1.781,1.781,0,0,0,670.2,897.2Z" transform="translate(-648.966 -865.458)" fill="#4f60b6"/>
@@ -59,15 +56,12 @@ export default function Home() {
                 All messages are optimized and comply with the legislation and rules of good marketing practices.
               </Text>
             </Box>
-
           </Box>
-            
-
         </Grid>
 
         <Grid templateColumns="repeat(2, 1fr)" gap={6}>
           <Box w="60%">
-            <Box mb={14}>
+            <Box mb={14} w={[300, 400, 500]}>
                 <Box mb={6}>
                   <svg xmlns="http://www.w3.org/2000/svg" width="76.28" height="53.913" viewBox="0 0 76.28 53.913">
                     <rect id="Retângulo_39" data-name="Retângulo 39" width="74.28" height="51.913" rx="3.388" transform="translate(1 1)" fill="none" stroke="#4d63c3" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
@@ -90,7 +84,7 @@ export default function Home() {
           </Box>
 
           <Box w="60%">
-            <Box mb={14}>
+            <Box mb={14} w={[300, 400, 500]}>
                 <Box mb={6}> 
                 <svg xmlns="http://www.w3.org/2000/svg" width="43.416" height="66.942" viewBox="0 0 43.416 66.942">
                   <circle id="Elipse_16" data-name="Elipse 16" cx="16.504" cy="16.504" r="16.504" transform="translate(5.204 1)" fill="none" stroke="#4d63c3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
@@ -112,7 +106,7 @@ export default function Home() {
 
         <Grid templateColumns="repeat(2, 1fr)" gap={6}>
           <Box w="60%">
-            <Box mb={14}>
+            <Box mb={14} w={[300, 400, 500]}>
               <Box mb={6}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="76.28" height="53.913" viewBox="0 0 76.28 53.913">
                   <line id="Linha_15" data-name="Linha 15" x2="2.813" y2="2.813" transform="translate(13.871 23.261)" fill="none" stroke="#4d63c3" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
@@ -139,7 +133,7 @@ export default function Home() {
           </Box>
           
           <Box w="60%">
-            <Box mb={14}>
+            <Box mb={14} w={[300, 400, 500]}>
               <Box mb={6}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="76.28" height="53.913" viewBox="0 0 76.28 53.913">
                   <rect id="Retângulo_41" data-name="Retângulo 41" width="74.28" height="51.913" rx="3.388" transform="translate(1 1)" fill="none" stroke="#4d63c3" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
@@ -160,7 +154,13 @@ export default function Home() {
           </Box>
 
         </Grid>
-
+        <Heading mt={20} mb={6} align="center" fontSize="40" fontFamily="SegoeUi, Segoe UI" color="#4f60b6">Event guest management images</Heading>
+        
+        <Text fontSize="20" fontFamily="Gotham-Book" mb={4} align="center">
+        Lorem pisum textLorem pisum text<br/>
+        Lorem pisum text.
+        </Text>
+        
       </Box>
       
     </Box>
