@@ -1,14 +1,15 @@
-import { Box, BoxProps, Center, Flex, Grid, Heading, Spacer, Stack, Text } from '@chakra-ui/layout';
+import { Box, BoxProps, Center, Flex, Grid, GridItem, Heading, Spacer, Stack, Text } from '@chakra-ui/layout';
 import { Image, Button } from "@chakra-ui/react";
 import DecoImage from './components/deco';
 import Nissan from './components/nissan';
 import Somersby from './components/somersby';
-import Ba from './components/ba'
+import Ba from './components/ba';
 import Volkswagen from './components/volkswagen';
 import Volvo from './components/volvo';
 import Sonae from './components/sonae';
 import Fnac from './components/fnac';
 import Fidelidade from './components/fidelidade';
+import ColoredLine from './components/whiteLine';
 
 
 
@@ -297,8 +298,37 @@ export default function Home() {
           </Box>  
         </Box>
 
-        <Box bg="#4F60B6" w="100%" p={4}>
-          Last Box
+        <Box bg="#4F60B6" w={[20, 100, 1250]} p={4}>
+          <Grid templateColumns="repeat(5, 1fr)" gap={4}>
+            <Grid templateColumns="repeat(2, 1fr)" gap={6}>
+              <Box w={[20, 100, 200]} mt={10} ml={5}>
+                   <Image src="./logo.png"/>
+              </Box>
+
+              <Box w={[20, 100, 200]} mt={10}>
+                <a href='https://www.spic.pt'><Text fontSize='13.38' color='white'>www.spic.pt</Text></a><br/>
+                <Text fontSize='13.38' color='white'>+351 289 358 326<br/><a href="mailto:test@email.com">info@spic.pt</a></Text>
+              </Box>
+            </Grid>
+              
+              <GridItem colStart={4} colEnd={6}>
+                <Box mt={10}>
+                <Text color='white' fontSize='13.38'>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Phasellus condimentum volutpat lorem a sagittis.
+                </Text>
+                </Box>
+                <Box mt={14}>
+                  <Button borderRadius="40px" height="48px" width="200px" bgColor="white"><Text color='#4f60b6' fontFamily='Gotham-Book'>Talk to us</Text></Button>
+                </Box>
+              </GridItem>
+              
+              
+          </Grid>
+          <Box mt={25} mb={6}>
+              <ColoredLine color="white"/>
+          </Box>
+          <Text color="white" fontSize='13.38' fontFamily='Gotham-Book'>@2021 Brand activation by SPIC. All rigths reserved</Text>
         </Box>
 
       </Box>
