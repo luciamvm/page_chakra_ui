@@ -18,12 +18,12 @@ export default function Home() {
   return (
   <Flex justifyContent="center">
     <Box>
-      <Box w={[100, 200, 300]}>
+      <Box w={[90, 200, 300]}>
         <div className="page-container-welcome">
           <Box bgColor='black' opacity='60%' height='645px' width='1215px'>
             <div className="logo">
             
-              <Box ml={[10,6,8]} mt={[4,6,8]}>
+              <Box ml={[20,6,8]} mt={[4,6,8]}>
                 <Image src="./logo.png"/ >
                 <Heading mt={16} mb={8} fontSize="60" fontFamily="Gotham-Bold" color="white">Event guest management</Heading>
                 <Box w='45%'>
