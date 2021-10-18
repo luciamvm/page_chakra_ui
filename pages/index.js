@@ -18,10 +18,10 @@ export default function Home() {
   return (
   <Flex justifyContent="center">
     <Box>
-      <Box>
+      <Box w={[100, 200, 300]}>
         <div className="page-container-welcome">
           <Box bgColor='black' opacity='60%' height='645px' width='1215px'>
-          <div className="logo">
+            <div className="logo">
             
               <Box ml={[4,6,8]} mt={[4,6,8]}>
                 <Image src="./logo.png"/ >
@@ -200,8 +200,6 @@ export default function Home() {
               </Text>
             </Box>
           </Center>
-
-          {/* Caroucel imagens */}
         </Box>
 
         
@@ -322,12 +320,12 @@ export default function Home() {
                   <Button borderRadius="40px" height="48px" width="200px" bgColor="white">
                     <Box mr={4}>
                       <svg xmlns="http://www.w3.org/2000/svg" width="25.818" height="16.207" viewBox="0 0 25.818 16.207">
-                        <path id="Caminho_92" data-name="Caminho 92" d="M1.29,0H23.528a1.29,1.29,0,0,1,1.29,1.29V13.917a1.29,1.29,0,0,1-1.29,1.29H1.29A1.29,1.29,0,0,1,0,13.916V1.29A1.29,1.29,0,0,1,1.29,0Z" transform="translate(0.5 0.5)" fill="none" stroke="#4f60ba" stroke-linecap="round" stroke-width="1"/>
-                        <line id="Linha_2" data-name="Linha 2" x2="3.199" transform="translate(6.967 13.555)" fill="none" stroke="#4f60ba" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
-                        <line id="Linha_3" data-name="Linha 3" x2="2.011" transform="translate(5.413 11.27)" fill="none" stroke="#4f60ba" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
-                        <line id="Linha_4" data-name="Linha 4" x2="5.485" transform="translate(10.167 11.27)" fill="none" stroke="#4f60ba" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
-                        <line id="Linha_5" data-name="Linha 5" x2="3.629" transform="translate(17.845 11.27)" fill="none" stroke="#4f60ba" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
-                        <line id="Linha_6" data-name="Linha 6" x2="6.947" transform="translate(12.909 13.555)" fill="none" stroke="#4f60ba" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
+                        <path id="Caminho_92" data-name="Caminho 92" d="M1.29,0H23.528a1.29,1.29,0,0,1,1.29,1.29V13.917a1.29,1.29,0,0,1-1.29,1.29H1.29A1.29,1.29,0,0,1,0,13.916V1.29A1.29,1.29,0,0,1,1.29,0Z" transform="translate(0.5 0.5)" fill="none" stroke="#4f60ba" strokeLinecap="round" strokeWidth="1"/>
+                        <line id="Linha_2" data-name="Linha 2" x2="3.199" transform="translate(6.967 13.555)" fill="none" stroke="#4f60ba" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="1"/>
+                        <line id="Linha_3" data-name="Linha 3" x2="2.011" transform="translate(5.413 11.27)" fill="none" stroke="#4f60ba" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="1"/>
+                        <line id="Linha_4" data-name="Linha 4" x2="5.485" transform="translate(10.167 11.27)" fill="none" stroke="#4f60ba" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="1"/>
+                        <line id="Linha_5" data-name="Linha 5" x2="3.629" transform="translate(17.845 11.27)" fill="none" stroke="#4f60ba" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="1"/>
+                        <line id="Linha_6" data-name="Linha 6" x2="6.947" transform="translate(12.909 13.555)" fill="none" stroke="#4f60ba" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="1"/>
                       </svg>
                     </Box>
                     <Text color='#4f60b6' fontFamily='Gotham-Book'> Talk to us</Text>
