@@ -18,7 +18,7 @@ export default function Home() {
   return (
   <Flex justifyContent="center">
     <Box>
-      <Box w={[50, 200, 300]}>
+      <Box w={[10, 200, 300]}>
         <div className="page-container-welcome">
           <Box bgColor='black' opacity='60%' height='645px' width='1215px'>
             <div className="logo">
