@@ -10,24 +10,26 @@ import Sonae from './components/sonae';
 import Fnac from './components/fnac';
 import Fidelidade from './components/fidelidade';
 import ColoredLine from './components/whiteLine';
+import { useMediaQuery } from '@chakra-ui/media-query';
 
 
 
 
 export default function Home() {
+  const [isNotSmallerScreen] = useMediaQuery('(min-width:600px)');
   return (
-  <Flex justifyContent="center">
+  <Flex justifyContent="center" direction={isNotSmallerScreen ? 'row' : 'column'} p={isNotSmallerScreen ? '0' : '0'}>
     <Box>
-      <Box>
+      <Box w={[10,20,40,60]}>
         <div className="page-container-welcome">
-          <Box bgColor='black' opacity='60%' height='645px' width='1215px'>
+          <Box bgColor='black' opacity='60%' height='645px' width='1215px' w='auto'>
             <div className="logo">
             
-              <Box ml={[4,6,8]} mt={[4,6,8]}>
-                <Image src="./logo.png"/ >
-                <Heading mt={16} mb={8} fontSize="60" fontFamily="Gotham-Bold" color="white">Event guest management</Heading>
+              <Box ml='8' mt={[10,6,8]} >
+                <Image src="./logo.png"/>
+                <Heading mt='16' mb='8' fontSize={[40,50,60]} fontFamily="Gotham-Bold" color="white">Event guest management</Heading>
                 <Box w='45%'>
-                  <Text fontSize="16" fontFamily="Gotham-Book" color='white'>
+                  <Text fontSize={["14", "15", "16"]} fontFamily="Gotham-Book" color='white'>
                     This application offers a set of tools for the main needs 
                     of your event - boosting participation, creating greater involvement
                     with your participants and communicating efficiently with your guests, 
@@ -38,19 +40,17 @@ export default function Home() {
                   </Text>
                   </Box>
               </Box>
-      
-            
           </div>
           </Box>
         </div>
         
       </Box>
       
-      <Box>
-        <Heading mt={20} mb={20} align="center" fontSize="40" fontFamily="SegoeUi, Segoe UI" color="#4f60b6">Includes the following</Heading>
+      <Box w={[1220, 1240, 1250]}>
+        <Heading mt={20} mb={20} align="center" fontSize={[32,36,40]}fontFamily="SegoeUi, Segoe UI" color="#4f60b6">Includes the following</Heading>
         
         <Grid templateColumns="repeat(2, 1fr)" gap={6}>
-          <Box w="60%">
+          <Box w='60%'>
               <Box mb={14} ml={10} w={[300, 400, 500]}>
                 <Box mb={6}>
                   <svg xmlns="http://www.w3.org/2000/svg" width="76.28" height="53.913" viewBox="0 0 76.28 53.913" mb={4}>
@@ -62,8 +62,8 @@ export default function Home() {
                   </svg>
                 </Box>
                 
-                <Text fontSize="20" fontFamily="Gotham-Bold" color="#4F60B6" mb={4}>Promotional Web Page</Text>
-                <Text fontSize="16" fontFamily="Gotham-Book">
+                <Text fontSize={["18", "19", "20"]} fontFamily="Gotham-Bold" color="#4F60B6" mb={4}>Promotional Web Page</Text>
+                <Text fontSize={["14", "15", "16"]} fontFamily="Gotham-Book">
                   Users will have at their disposal an online space, where they can select and buy entrance tickets, 
                   and get all the necessary information about the event. Access to registration and attendance confirmation 
                   will also be contemplated.
@@ -86,8 +86,8 @@ export default function Home() {
                 </svg>
               </Box>
 
-              <Text fontSize="20" fontFamily="Gotham-Bold" color="#4F60B6" mb={4}>Email/ SMS</Text>
-              <Text fontSize="16" fontFamily="Gotham-Book">
+              <Text fontSize={["18", "19", "20"]} fontFamily="Gotham-Bold" color="#4F60B6" mb={4}>Email/ SMS</Text>
+              <Text fontSize={["14", "15", "16"]} fontFamily="Gotham-Book">
                 The system allows you to promote your event and send invitations or notifications by email or SMS. It allows you to configure 
                 email campaigns and pre-define times for them to be sent.
                 All messages are optimized and comply with the legislation and rules of good marketing practices.
@@ -112,8 +112,8 @@ export default function Home() {
                   </svg>
                 </Box>
 
-                <Text fontSize="20" fontFamily="Gotham-Bold" color="#4F60B6" mb={4}>Registration</Text>
-                <Text fontSize="16" fontFamily="Gotham-Book">
+                <Text fontSize={["18", "19", "20"]} fontFamily="Gotham-Bold" color="#4F60B6" mb={4}>Registration</Text>
+                <Text fontSize={["14", "15", "16"]} fontFamily="Gotham-Book">
                 After receiving the invitation, the users will have access to the attendance confirmation form, where they can confirm/edit their details, 
                 fill in the other required fields and confirm the attendance process at the event.
                 </Text>
@@ -129,8 +129,8 @@ export default function Home() {
                   </svg>
                 </Box>
 
-                <Text fontSize="20" fontFamily="Gotham-Bold" color="#4F60B6" mb={4}>Guest and attendance</Text>
-                <Text fontSize="16" fontFamily="Gotham-Book">
+                <Text fontSize={["18", "19", "20"]} fontFamily="Gotham-Bold" color="#4F60B6" mb={4}>Guest and attendance</Text>
+                <Text fontSize={["14", "15", "16"]} fontFamily="Gotham-Book">
                 Contact management is essential for maintaining a relationship with guests. The ability to organize and control this
                 information is the key to success for any event. The application provides several features that aim to build stronger 
                 relationships leading to a more successful event.
@@ -159,8 +159,8 @@ export default function Home() {
                 </svg>
               </Box>
 
-              <Text fontSize="20" fontFamily="Gotham-Bold" color="#4F60B6" mb={4}>Satisfaction questionnaires</Text>
-              <Text fontSize="16" fontFamily="Gotham-Book">
+              <Text fontSize={["18", "19", "20"]} fontFamily="Gotham-Bold" color="#4F60B6" mb={4}>Satisfaction questionnaires</Text>
+              <Text fontSize={["14", "15", "16"]} fontFamily="Gotham-Book">
               The creation and sending of questionnaires is an excellent way for you to measure the performance of your event. 
               With this tool you will be able to know the best way to accommodate to the needs of your guests and effectively 
               communicate the nature and benefits of your event.
@@ -181,8 +181,8 @@ export default function Home() {
 
               </Box>
 
-              <Text fontSize="20" fontFamily="Gotham-Bold" color="#4F60B6" mb={4}>Stats/ Analytics</Text>
-              <Text fontSize="16" fontFamily="Gotham-Book">
+              <Text fontSize={["18", "19", "20"]} fontFamily="Gotham-Bold" color="#4F60B6" mb={4}>Stats/ Analytics</Text>
+              <Text fontSize={["14", "15", "16"]} fontFamily="Gotham-Book">
               It features a secure data infrastructure for a detailed and real-time statistical analysis with several metrics for 
               analysis or export, to help improve strategies and provide a better quality of service to the users.
               </Text>
@@ -191,11 +191,11 @@ export default function Home() {
 
         </Grid>
 
-        <Box mb={14}>
+        <Box mb={14} w={[1220, 1240, 1250]}>
           <Heading mt={20} mb={6} align="center" fontSize="40" fontFamily="SegoeUi, Segoe UI" color="#4f60b6">Event guest management images</Heading>
           <Center>
             <Box w={[100, 200, 300]}>
-              <Text fontSize={{ base: "10", md: "12", lg: "16" }} fontFamily="Gotham-Book" mb={4} align="center">
+              <Text fontSize={["14", "15", "16"]} fontFamily="Gotham-Book" mb={4} align="center">
                 Lorem pisum text Lorem pisum text Lorem pisum text.
               </Text>
             </Box>
@@ -204,11 +204,11 @@ export default function Home() {
 
         
 
-        <Box mb={14}>
+        <Box mb={14} w={[1220, 1240, 1250]}>
           <Heading mt={20} mb={6} align="center" fontSize="40" fontFamily="SegoeUi, Segoe UI" color="#4f60b6">Some of the brands that we’ve worked with</Heading>
           <Center>
             <Box mb={12} w={[400, 500, 600]}>
-              <Text fontSize={{ base: "10", md: "12", lg: "16" }} fontFamily="Gotham-Book" mb={4} align="center">
+              <Text fontSize={["14", "15", "16"]} fontFamily="Gotham-Book" mb={4} align="center">
               We have developed numerous challenging projects, all over the years.<br/>
               In our journey we had the privilege of working great brands with wonderful people.
               </Text>
@@ -222,8 +222,8 @@ export default function Home() {
                 </Box>          
               </Box>  
 
-              <Box w="100%">
-                  <Box w={[200, 300, 400]}>
+              <Box w={['10%', '90%' , "100%"]}>
+                  <Box w={[200, 300, 400]} ml={[6, 8, 0]}>
                     <Fnac/>
                   </Box>          
               </Box>
@@ -277,11 +277,11 @@ export default function Home() {
           
         </Box>
 
-        <Box bg="#EAEAEA" w="100%" p={4}>
+        <Box bg="#EAEAEA" w={[1220, 1240, 1250]} p={4}>
           <Heading mt={20} mb={6} align="center" fontSize="40" fontFamily="SegoeUi, Segoe UI" color="#4f60b6">CAN'T FIND WHAT YOU ARE LOOKING FOR?</Heading>
           <Center>
             <Box mb={12} w={[300, 400, 500]}>
-              <Text fontSize={{ base: "10", md: "12", lg: "16" }} fontFamily="Gotham-Book" mb={4} align="center">
+              <Text fontSize={["12", "14", "16"]} fontFamily="Gotham-Book" mb={4} align="center">
               No problem. Custom-Made Is the best way to go! <br/> Just tell us what you need! We love challenges and great ideas.
               </Text>
             </Box>
@@ -296,25 +296,25 @@ export default function Home() {
           </Box>  
         </Box>
 
-        <Box bg="#4F60B6" w={[20, 100, 1250]} p={4}>
-          <Grid templateColumns="repeat(5, 1fr)" gap={4}>
-            <Grid templateColumns="repeat(2, 1fr)" gap={6}>
-              <Box w={[20, 100, 200]} mt={10} ml={5}>
+        <Box bg="#4F60B6" w={[1220, 1240,1250]} p={[0,2,4]}>
+          <Grid templateColumns="repeat(5, 1fr)" gap={[2,4,6]}>
+            <Grid templateColumns="repeat(2, 1fr)" gap={[2,4,6]}>
+              <Box w={[80, 140, 200]} mt={10} ml={[2,4,5]}>
                    <Image src="./logo.png"/>
               </Box>
 
-              <Box w={[20, 100, 200]} mt={10}>
-                <a href='https://www.spic.pt'><Text fontSize='13.38' color='white'>www.spic.pt</Text></a><br/>
+              <Box w={[80, 100, 200]} mt={10} >
+                <a href='https://www.spic.pt'><Text fontSize={["11", "12", "13.38"]} color='white'>www.spic.pt</Text></a><br/>
                 <Text fontSize='13.38' color='white'>+351 289 358 326<br/><a href="mailto:test@email.com">info@spic.pt</a></Text>
               </Box>
             </Grid>
               
-              <GridItem colStart={4} colEnd={6}>
+              <GridItem colStart={[2,4,4]} colEnd={6}>
                 <Box mt={10}>
-                <Text color='white' fontSize='13.38'>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                  Phasellus condimentum volutpat lorem a sagittis.
-                </Text>
+                  <Text color='white' fontSize={["11", "12", "13.38"]}>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Phasellus condimentum volutpat lorem a sagittis.
+                  </Text>
                 </Box>
                 <Box mt={14}>
                   <Button borderRadius="40px" height="48px" width="200px" bgColor="white">
@@ -338,7 +338,7 @@ export default function Home() {
           <Box mt={25} mb={6}>
               <ColoredLine color="white"/>
           </Box>
-          <Text color="white" fontSize='13.38' fontFamily='Gotham-Book'>@2021 Brand activation by SPIC. All rigths reserved</Text>
+          <Text color="white" fontSize={["11", "12", "13.38"]} fontFamily='Gotham-Book'>@2021 Brand activation by SPIC. All rigths reserved</Text>
         </Box>
 
       </Box>
