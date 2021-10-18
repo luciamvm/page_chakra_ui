@@ -23,7 +23,7 @@ export default function Home() {
           <Box bgColor='black' opacity='60%' height='645px' width='1215px'>
             <div className="logo">
             
-              <Box ml={[4,6,8]} mt={[4,6,8]}>
+              <Box ml={[10,6,8]} mt={[4,6,8]}>
                 <Image src="./logo.png"/ >
                 <Heading mt={16} mb={8} fontSize="60" fontFamily="Gotham-Bold" color="white">Event guest management</Heading>
                 <Box w='45%'>
