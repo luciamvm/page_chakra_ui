@@ -208,7 +208,7 @@ export default function Home() {
 
         
 
-        <Box mb={14} w={[1220, 1240, 1250]}>
+        <Box mb={14} w={[1210, 1240, 1250]}>
           <Heading mt={20} mb={6} align="center" fontSize="40" fontFamily="SegoeUi, Segoe UI" color="#4f60b6">Some of the brands that we’ve worked with</Heading>
           <Center>
             <Box mb={12} w={[500, 550, 600]}>
@@ -221,42 +221,43 @@ export default function Home() {
           
           <Grid templateColumns="repeat(3, 1fr)">
             <Box w="100%">
-                <Box ml={[6, 8, 12]} w={[200, 300, 400]}>
-                  <Fidelidade/>
-                </Box>          
-              </Box>  
+              <Box ml={[6, 8, 12]} w={[200, 300, 400]}>
+                <Fidelidade/>
+              </Box>          
+            </Box>  
 
-              <Box w={['10%', '90%' , "100%"]}>
-                  <Box w={[200, 300, 400]} ml={[6, 8, 0]}>
-                    <Fnac/>
-                  </Box>          
-              </Box>
+            <Box w="100%">
+              <Box w={[200, 300, 400]}>
+                <Fnac/>
+              </Box>          
+            </Box>
 
-              <Box w="100%">
-                <Box w={[200, 300, 400]}>
-                  <Sonae/>
-                </Box>          
+            <Box w="100%">
+              <Box w={[200, 300, 400]}>
+                <Sonae/>
               </Box>
+            </Box>          
+            
           </Grid>
           
           <Grid templateColumns="repeat(3, 1fr)">
             <Box w="100%">
-                <Box ml={[6, 8, 12]} w={[200, 300, 400]}>
-                  <Volvo/>
-                </Box>          
-              </Box>  
+              <Box ml={[6, 8, 12]} w={[200, 300, 400]}>
+                <Volvo/>
+              </Box>          
+            </Box>  
 
-              <Box w="100%">
-                  <Box w={[200, 300, 400]}>
-                     <Volkswagen/>
-                  </Box>          
-              </Box>
-
-              <Box w="100%">
+            <Box w="100%">
                 <Box w={[200, 300, 400]}>
-                  <Ba/>
+                    <Volkswagen/>
                 </Box>          
-              </Box>
+            </Box>
+
+            <Box w="100%">
+              <Box w={[200, 300, 400]}>
+                <Ba/>
+              </Box>          
+            </Box>
           </Grid>
 
           <Grid templateColumns="repeat(3, 1fr)">
