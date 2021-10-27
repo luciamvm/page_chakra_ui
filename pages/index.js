@@ -35,7 +35,7 @@ export default function Home() {
                 <Image src="./logo.png"/>
                 <Heading mt='16' mb='8' fontSize={['72px','60px']} fontFamily="Gotham-Bold" color="white">Event guest management</Heading>
                 <Box w={['55%', '45%']}>
-                  <Text fontSize={['24', '16']} fontFamily="Gotham-Book" color='white'>
+                  <Text fontSize={['24','22','20','16']} fontFamily="Gotham-Book" color='white'>
                     This application offers a set of tools for the main needs 
                     of your event - boosting participation, creating greater involvement
                     with your participants and communicating efficiently with your guests, 
@@ -51,12 +51,12 @@ export default function Home() {
         </div>
       </Box>
 
-      <Box w={[1260, 1250]}>
+      <Box w={[1260, 1258,1260, 1250]}>
         <Heading mt={20} mb={20} align="center" fontSize={[48, 40]} fontFamily="SegoeUi, Segoe UI" color="#4f60b6">Includes the following</Heading>
         
-        <Stack direction={['column', 'row']} spacing='24px' align='center'>
+        <Stack direction={{base:'column', md: 'column',lg: 'row'}} spacing='24px' align='center'>
           <Box w={'100%'}>
-              <Box mb={14} ml={10} w={[900, 500]} rounded={{md:'sm', ls:'base'}}>
+              <Box mb={14} ml={10} w={[900,875,850, 500]} rounded={{md:'sm', ls:'base'}}>
                 <FirstComponents 
                   heading='Promotional Web Page' 
                   svg={<svg xmlns="http://www.w3.org/2000/svg" width="76.28" height="53.913" viewBox="0 0 76.28 53.913" mb={4}>
@@ -73,7 +73,7 @@ export default function Home() {
           </Box>
           
           <Box w={'100%'}>
-            <Box mb={14} ml={10} w={[900, 500]}>
+            <Box mb={14} ml={10} w={[900,875,850, 500]}>
               <FirstComponents 
                 heading='Email/ SMS' 
                 svg={<svg xmlns="http://www.w3.org/2000/svg" width="89.14" height="72.917" viewBox="0 0 89.14 72.917">
@@ -92,9 +92,9 @@ export default function Home() {
           </Box>
         </Stack>
 
-        <Stack direction={['column', 'row']} spacing='24px' align='center'>
+        <Stack direction={{base:'column', md: 'column',lg: 'row'}} spacing='24px' align='center'>
           <Box w="100%">
-            <Box mb={14} ml={10} w={[900, 500]}>
+            <Box mb={14} ml={10} w={[900,875,850, 500]}>
               <FirstComponents 
                 heading='Registration'
                 svg={<svg xmlns="http://www.w3.org/2000/svg" width="76.28" height="53.913" viewBox="0 0 76.28 53.913">
@@ -113,7 +113,7 @@ export default function Home() {
           </Box>
 
           <Box w="100%">
-            <Box mb={14} ml={10} w={[900, 500]}>
+            <Box mb={14} ml={10} w={[900,875,850, 500]}>
               <FirstComponents 
                 heading='Guest and attendance'
                 svg={<svg xmlns="http://www.w3.org/2000/svg" width="43.416" height="66.942" viewBox="0 0 43.416 66.942">
@@ -127,9 +127,9 @@ export default function Home() {
           </Box>
         </Stack>
 
-        <Stack direction={['column', 'row']} spacing='24px' align='center'>
+        <Stack direction={{base:'column', md: 'column',lg: 'row'}} spacing='24px' align='center'>
           <Box w="100%">
-            <Box mb={14} ml={10} w={[900, 500]}>
+            <Box mb={14} ml={10} w={[900,875,850, 500]}>
               <FirstComponents
                heading='Satisfaction questionnaires'
                svg={<svg xmlns="http://www.w3.org/2000/svg" width="76.28" height="53.913" viewBox="0 0 76.28 53.913">
@@ -152,7 +152,7 @@ export default function Home() {
           </Box>
           
           <Box w="100%">
-            <Box mb={14} ml={10} w={[900, 500]}>
+            <Box mb={14} ml={10} w={[900,875,850, 500]}>
               <FirstComponents
                 heading='Stats/ Analytics'
                 svg={<svg xmlns="http://www.w3.org/2000/svg" width="76.28" height="53.913" viewBox="0 0 76.28 53.913">
@@ -173,7 +173,7 @@ export default function Home() {
         <Heading mt={20} mb={6} align="center" fontSize={["48","40"]} fontFamily="SegoeUi, Segoe UI" color="#4f60b6">Event guest management images</Heading>
         <Center>
           <Box w={[500, 400, 300]}>
-            <Text fontSize={['24','16']} fontFamily="Gotham-Book" mb={4} align="center">
+            <Text fontSize={['24','24','24','16']} fontFamily="Gotham-Book" mb={4} align="center">
               Lorem pisum text Lorem pisum text Lorem pisum text.
             </Text>
           </Box>
@@ -182,8 +182,8 @@ export default function Home() {
       <Box mb={14} w={[1260, 1250]}>
           <Heading mt={20} mb={6} align="center" fontSize={['48', '40']} fontFamily="SegoeUi, Segoe UI" color="#4f60b6">Some of the brands that we’ve worked with</Heading>
           <Center>
-            <Box mb={12} w={[800, 550, 600]}>
-              <Text fontSize={['24','16']} fontFamily="Gotham-Book" mb={4} align="center">
+            <Box mb={12} w={[800, 750,700, 600]}>
+              <Text fontSize={['24','23','22','16']} fontFamily="Gotham-Book" mb={4} align="center">
               We have developed numerous challenging projects, all over the years.<br/>
               In our journey we had the privilege of working great brands with wonderful people.
               </Text>
@@ -233,8 +233,8 @@ export default function Home() {
         <Box bg="#EAEAEA" width={[1260, 1250]} height={['455px','395px']} p={4}>
           <Heading mt={20} mb={6} align="center" fontSize={["48", "40"]} fontFamily="SegoeUi, Segoe UI" color="#4f60b6">CAN'T FIND WHAT YOU ARE LOOKING FOR?</Heading>
           <Center>
-            <Box mb={[6, 3]} w={[700, 400, 500]}>
-              <Text fontSize={["24", "16"]} fontFamily="Gotham-Book" mb={4} align="center">
+            <Box mb={[6, 3]} w={[700, 650,600, 500]}>
+              <Text fontSize={['24','24','24','16']} fontFamily="Gotham-Book" mb={4} align="center">
               No problem. Custom-Made Is the best way to go! <br/> Just tell us what you need! We love challenges and great ideas.
               </Text>
             </Box>
@@ -244,7 +244,7 @@ export default function Home() {
             <Center>
               <a href='https://www.spic.pt'>
                 <Button borderRadius="40px" height={["62px", "48px"]} width={["280px", "200px"]} bgColor="#4F60B6">
-                <Text fontSize={["24", "16"]} fontFamily="Gotham-Book" mb={[0,2]} align="center">Talk to us</Text>
+                <Text fontSize={['24','24','24','16']} fontFamily="Gotham-Book" mb={[0,2]} align="center">Talk to us</Text>
                 </Button>
               </a>
             </Center>  
