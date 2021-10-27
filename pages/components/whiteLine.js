@@ -1,10 +1,10 @@
-export default function ColoredLine(color) {
+export default function ColoredLine(color, height) {
     return (
         <hr
             style={{
                 color: color,
                 backgroundColor: color,
-                height: 5
+                height: height
         }}
     />
     )

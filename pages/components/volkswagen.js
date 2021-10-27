@@ -1,8 +1,8 @@
-import { Box } from '@chakra-ui/layout'
+import { Center } from '@chakra-ui/layout'
 
 function Volkswagen() {
     return (
-        <Box mb={8}>
+        <Center w={['495px','345px']}>
             <svg xmlns="http://www.w3.org/2000/svg" width="363.886" height="140.229" viewBox="0 0 363.886 140.229">
             <rect id="Retângulo_32" data-name="Retângulo 32" width="363.886" height="140.229" rx="8.221" fill="#f3f5f7"/>
             <path id="Caminho_71" data-name="Caminho 71" d="M612.109,3130.618c.718.134,1.441.247,2.152.407a16.576,16.576,0,1,1-9.6.672,31.344,31.344,0,0,1,3.878-.974c.138-.034.275-.07.412-.1Zm-1.6,30.843a14.318,14.318,0,1,0-14.3-14.342A14.306,14.306,0,0,0,610.508,3161.461Z" transform="translate(-422.629 -3084.49)" fill="#333"/>
@@ -22,7 +22,7 @@ function Volkswagen() {
             <path id="Caminho_85" data-name="Caminho 85" d="M607.079,3135.854a11.826,11.826,0,0,1,6.888,0l-3.443,7.736Z" transform="translate(-422.629 -3084.49)" fill="#333"/>
             <path id="Caminho_86" data-name="Caminho 86" d="M610.529,3150.712l3.437,7.735a12.017,12.017,0,0,1-6.885.011Z" transform="translate(-422.629 -3084.49)" fill="#333"/>
             </svg>
-        </Box>
+        </Center>
     )
 }
 

@@ -4,18 +4,18 @@ html {
 }
     
 body {
-margin: 0px;
-padding: 0px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .page-container {
-height: 100vh;
-position: relative;
+    height: 100vh;
+    position: relative;
 }
 
 .page-container-welcome {
-    width: 1215px;
-    height: 645px;
+    width:'1215px';
+    height: '645px';
     /* opacity: 0.53; */
     position: relative;
     background-size: cover;

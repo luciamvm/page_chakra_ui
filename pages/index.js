@@ -27,15 +27,15 @@ export default function Home() {
     <Box w={['100%', '98%', '95%', '80%']}>
 
       {/* Here is the header of the website */}
-      <Box w={[1220, 1240, 1250]}>
+      <Box w={[1260, 1250]}>
         <div className="page-container-welcome">
           <Box bgColor='black' opacity='60%' height='645px' width='1215px'>
             <div className="logo">
               <Box ml='8' mt={[10,6,8]} >
                 <Image src="./logo.png"/>
-                <Heading mt='16' mb='8' fontSize="60px" fontFamily="Gotham-Bold" color="white">Event guest management</Heading>
-                <Box w={['40%', '43%', '45%']}>
-                  <Text fontSize="16" fontFamily="Gotham-Book" color='white'>
+                <Heading mt='16' mb='8' fontSize={['72px','60px']} fontFamily="Gotham-Bold" color="white">Event guest management</Heading>
+                <Box w={['55%', '45%']}>
+                  <Text fontSize={['24', '16']} fontFamily="Gotham-Book" color='white'>
                     This application offers a set of tools for the main needs 
                     of your event - boosting participation, creating greater involvement
                     with your participants and communicating efficiently with your guests, 
@@ -51,7 +51,7 @@ export default function Home() {
         </div>
       </Box>
 
-      <Box w={[1220, 1240 ,1250]}>
+      <Box w={[1260, 1250]}>
         <Heading mt={20} mb={20} align="center" fontSize={[48, 40]} fontFamily="SegoeUi, Segoe UI" color="#4f60b6">Includes the following</Heading>
         
         <Stack direction={['column', 'row']} spacing='24px' align='center'>
@@ -169,7 +169,7 @@ export default function Home() {
         </Stack>
       </Box>
 
-      <Box mb={14} w={[1220, 1240, 1250]}>
+      <Box mb={14} w={[1260, 1250]}>
         <Heading mt={20} mb={6} align="center" fontSize={["48","40"]} fontFamily="SegoeUi, Segoe UI" color="#4f60b6">Event guest management images</Heading>
         <Center>
           <Box w={[500, 400, 300]}>
@@ -179,7 +179,7 @@ export default function Home() {
           </Box>
         </Center>
       </Box>
-      <Box mb={14} w={[1210, 1240, 1250]}>
+      <Box mb={14} w={[1260, 1250]}>
           <Heading mt={20} mb={6} align="center" fontSize={['48', '40']} fontFamily="SegoeUi, Segoe UI" color="#4f60b6">Some of the brands that we’ve worked with</Heading>
           <Center>
             <Box mb={12} w={[800, 550, 600]}>
@@ -190,65 +190,47 @@ export default function Home() {
             </Box>
           </Center>
           
-          <Grid templateColumns="repeat(3, 1fr)">
-            <Box w="100%">
-              <Box ml={[6, 8, 12]} w={[200, 300, 400]}>
-                <Fidelidade/>
-              </Box>          
-            </Box>  
+          <Wrap ml={['36', '20']} spacing='24px' >
+            <WrapItem>
+              <Fidelidade/>   
+            </WrapItem>  
 
-            <Box w="100%">
-              <Box w={[200, 300, 400]}>
-                <Fnac/>
-              </Box>          
-            </Box>
+            <WrapItem>
+              <Fnac/>    
+            </WrapItem>
 
-            <Box w="100%">
-              <Box w={[200, 300, 400]}>
-                <Sonae/>
-              </Box>
-            </Box>          
+            <WrapItem>
+              <Sonae/>
+            </WrapItem>          
             
-         
-            <Box w="100%">
-              <Box ml={[6, 8, 12]} w={[200, 300, 400]}>
-                <Volvo/>
-              </Box>          
-            </Box>  
+            <WrapItem>
+              <Volvo/>  
+            </WrapItem>  
 
-            <Box w="100%">
-                <Box w={[200, 300, 400]}>
-                    <Volkswagen/>
-                </Box>          
-            </Box>
+            <WrapItem>
+              <Volkswagen/>      
+            </WrapItem>
 
-            <Box w="100%">
-              <Box w={[200, 300, 400]}>
-                <Ba/>
-              </Box>          
-            </Box>
-            <Box w="100%">
-              <Box ml={[6, 8, 12]} w={[200, 300, 400]}>
-                <Somersby/>
-              </Box>          
-            </Box>  
+            <WrapItem>
+              <Ba/>     
+            </WrapItem>
 
-            <Box w="100%">
-              <Box w={[200, 300, 400]}>
-                <Nissan/>
-              </Box>          
-            </Box>
+            <WrapItem>
+              <Somersby/>          
+            </WrapItem>  
 
-            <Box w="100%">
-              <Box w={[200, 300, 400]}>
-                <DecoImage/>
-              </Box>          
-            </Box>
-          </Grid>
+            <WrapItem>
+              <Nissan/>      
+            </WrapItem>
+
+            <WrapItem>
+              <DecoImage/>      
+            </WrapItem>
+          </Wrap>
           
         </Box>
 
-        <Box bg="#EAEAEA" width='1215px' height='395px' p={4}>
+        <Box bg="#EAEAEA" width={[1260, 1250]} height={['455px','395px']} p={4}>
           <Heading mt={20} mb={6} align="center" fontSize={["48", "40"]} fontFamily="SegoeUi, Segoe UI" color="#4f60b6">CAN'T FIND WHAT YOU ARE LOOKING FOR?</Heading>
           <Center>
             <Box mb={[6, 3]} w={[700, 400, 500]}>
@@ -269,16 +251,16 @@ export default function Home() {
           </Box>  
         </Box>
 
-        <Box bg="#4F60B6" width='1215px' height='225px' p={[0,2,4]}>
+        <Box bg="#4F60B6" width={[1260, 1250]} height={['335px', '225px']} p={[6,4]}>
           <Wrap spacing='30px' align='center'>
             <WrapItem>
-              <Box w={[280, 200]} h={[150,100]} ml={[12,5]} mt={[12,6]}>
+              <Box w={[280, 200]} h={[120,100]} ml={[12,5]} mt={[12,6]}>
                    <Image src="./logo.png"/>
               </Box>
             </WrapItem>
 
             <WrapItem>
-              <Box w={[280, 140]} h={[150,100]} mt={[12,6]} >
+              <Box w={[280, 140]} h={[120,100]} mt={[12,6]} >
                   <a href='https://www.spic.pt'><Text fontSize={["18.74", "13.38"]} color='white'>www.spic.pt</Text></a><br/>
                   <Text fontSize='13.38' color='white'>+351 289 358 326<br/><a href="mailto:test@email.com">info@spic.pt</a></Text>
               </Box>
@@ -315,7 +297,7 @@ export default function Home() {
           </Wrap>
 
           <Box mt={25} mb={6}>
-              <ColoredLine color="white"/>
+              <ColoredLine color="white" height={[2,5]}/>
           </Box>
           <Text color="white" fontSize={["22.76", "13.38"]} fontFamily='Gotham-Book'>@2021 Brand activation by SPIC. All rigths reserved</Text>
         </Box>
