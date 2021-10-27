@@ -260,9 +260,9 @@ export default function Home() {
             </WrapItem>
 
             <WrapItem>
-              <Box w={[280, 140]} h={[120,100]} mt={[12,6]} >
+              <Box w={[290, 140]} h={[120,100]} mt={[12,6]} >
                   <a href='https://www.spic.pt'><Text fontSize={["18.74", "13.38"]} color='white'>www.spic.pt</Text></a><br/>
-                  <Text fontSize='13.38' color='white'>+351 289 358 326<br/><a href="mailto:test@email.com">info@spic.pt</a></Text>
+                  <Text fontSize={["18.74", "13.38"]} color='white'>+351 289 358 326<br/><a href="mailto:test@email.com">info@spic.pt</a></Text>
               </Box>
             </WrapItem>
 
