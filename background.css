@@ -13,9 +13,10 @@ body {
     position: relative;
 }
 
+
 .page-container-welcome {
-    width:'1215px';
-    height: '645px';
+    height: auto;
+    width: 100%;
     /* opacity: 0.53; */
     position: relative;
     background-size: cover;

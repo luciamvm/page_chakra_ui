@@ -24,12 +24,12 @@ export default function Home() {
   return (
  
   <Flex justifyContent='center' direction={{ base: 'column-reverse', md: 'inherit', lg: '-moz-initial' }} {...flexProps}>
-    <Box w={['100%', '98%', '95%', '80%']}>
+    <Box w={'100%'}>
 
       {/* Here is the header of the website */}
-      <Box w={[1260, 1250]}>
+     
         <div className="page-container-welcome">
-          <Box bgColor='black' opacity='60%' height='645px' width='1250px' position='relative'>
+          <Box bgColor='black' opacity='60%' height='800px' width='1520px' position='relative'>
             <div className="logo">
               <Box ml='8' mt={[10,6,8]} >
                 <Image src="./logo.png"/>
@@ -49,7 +49,7 @@ export default function Home() {
             </div>
           </Box>
         </div>
-      </Box>
+     
 
       <Box w={[1260, 1258,1260, 1250]}>
         <Heading mt={20} mb={20} align="center" fontSize={[48, 40]} fontFamily="SegoeUi, Segoe UI" color="#4f60b6">Includes the following</Heading>
