@@ -1,5 +1,5 @@
 import { Box, BoxProps, Center, Flex, Grid, GridItem, Heading, HStack, Spacer, Stack, Text, flexProps, VStack, Wrap, WrapItem } from '@chakra-ui/layout';
-import { Image, Button } from "@chakra-ui/react";
+import { Image, Button, B } from "@chakra-ui/react";
 import DecoImage from './components/deco';
 import Nissan from './components/nissan';
 import Somersby from './components/somersby';
@@ -10,32 +10,22 @@ import Sonae from './components/sonae';
 import Fnac from './components/fnac';
 import Fidelidade from './components/fidelidade';
 import ColoredLine from './components/whiteLine';
-import { useMediaQuery } from '@chakra-ui/media-query';
 import FirstComponents from './components/first_component';
-
-
-
-
-
-
 
 export default function Home() {
   
   return (
- 
   <Flex justifyContent='center' direction={{ base: 'column-reverse', md: 'inherit', lg: '-moz-initial' }} {...flexProps}>
-    <Box w={'100%'}>
+    <Box w={['100%']}>
 
-      {/* Here is the header of the website */}
-     
-        <div className="page-container-welcome">
-          <Box bgColor='black' opacity='60%' height='800px' width='1520px' position='relative'>
-            <div className="logo">
-              <Box ml='8' mt={[10,6,8]} >
+      {/* Here is the header of the website */} 
+      <Box backgroundImage="./firstImage.jpg" backgroundSize='cover' height='800px' width='1519px' position='relative'>
+          <Box bgColor='black' opacity='60%' height='800px' width='1519px' position='relative'>
+              <Box ml='8' mt={[10,12]} position='absolute'>
                 <Image src="./logo.png"/>
-                <Heading mt='16' mb='8' fontSize={['72px','60px']} fontFamily="Gotham-Bold" color="white">Event guest management</Heading>
-                <Box w={['55%', '45%']}>
-                  <Text fontSize={['24','22','20','16']} fontFamily="Gotham-Book" color='white'>
+                <Heading mt={20} mb='8' fontSize={['80px','78px','80px','70px']} fontFamily="Gotham-Bold" color="white">Event guest management</Heading>
+                <Box w={['55%', '54%', '53%','45%']}>
+                  <Text fontSize={['28','27','30','21']} fontFamily="Gotham-Book" color='white'>
                     This application offers a set of tools for the main needs 
                     of your event - boosting participation, creating greater involvement
                     with your participants and communicating efficiently with your guests, 
@@ -46,17 +36,17 @@ export default function Home() {
                   </Text>
                 </Box>
               </Box>
-            </div>
+            
           </Box>
-        </div>
+        </Box>
      
 
-      <Box w={[1260, 1258,1260, 1250]}>
-        <Heading mt={20} mb={20} align="center" fontSize={[48, 40]} fontFamily="SegoeUi, Segoe UI" color="#4f60b6">Includes the following</Heading>
+      <Box width='1519px'>
+        <Heading mt={20} mb={20} align='center' fontSize={[48, 40]} fontFamily="SegoeUi, Segoe UI" color="#4f60b6">Includes the following</Heading>
         
         <Stack direction={{base:'column', md: 'column',lg: 'row'}} spacing='24px' align='center'>
           <Box w={'100%'}>
-              <Box mb={14} ml={10} w={[900,875,850, 500]} rounded={{md:'sm', ls:'base'}}>
+              <Box mb={14} ml={10} w={[950,875,950,650]}>
                 <FirstComponents 
                   heading='Promotional Web Page' 
                   svg={<svg xmlns="http://www.w3.org/2000/svg" width="76.28" height="53.913" viewBox="0 0 76.28 53.913" mb={4}>
@@ -72,8 +62,8 @@ export default function Home() {
               </Box>            
           </Box>
           
-          <Box w={'100%'}>
-            <Box mb={14} ml={10} w={[900,875,850, 500]}>
+          <Box width='100%'>
+            <Box mb={14} ml={10} w={[900,875,950, 650]}>
               <FirstComponents 
                 heading='Email/ SMS' 
                 svg={<svg xmlns="http://www.w3.org/2000/svg" width="89.14" height="72.917" viewBox="0 0 89.14 72.917">
@@ -94,7 +84,7 @@ export default function Home() {
 
         <Stack direction={{base:'column', md: 'column',lg: 'row'}} spacing='24px' align='center'>
           <Box w="100%">
-            <Box mb={14} ml={10} w={[900,875,850, 500]}>
+            <Box mb={14} ml={10} w={[900,875,950, 650]}>
               <FirstComponents 
                 heading='Registration'
                 svg={<svg xmlns="http://www.w3.org/2000/svg" width="76.28" height="53.913" viewBox="0 0 76.28 53.913">
@@ -112,8 +102,8 @@ export default function Home() {
             </Box>
           </Box>
 
-          <Box w="100%">
-            <Box mb={14} ml={10} w={[900,875,850, 500]}>
+          <Box w='100%'>
+            <Box mb={14} ml={10} w={[900,875,950, 650]}>
               <FirstComponents 
                 heading='Guest and attendance'
                 svg={<svg xmlns="http://www.w3.org/2000/svg" width="43.416" height="66.942" viewBox="0 0 43.416 66.942">
@@ -129,7 +119,7 @@ export default function Home() {
 
         <Stack direction={{base:'column', md: 'column',lg: 'row'}} spacing='24px' align='center'>
           <Box w="100%">
-            <Box mb={14} ml={10} w={[900,875,850, 500]}>
+            <Box mb={14} ml={10} w={[900,875,950, 650]}>
               <FirstComponents
                heading='Satisfaction questionnaires'
                svg={<svg xmlns="http://www.w3.org/2000/svg" width="76.28" height="53.913" viewBox="0 0 76.28 53.913">
@@ -152,7 +142,7 @@ export default function Home() {
           </Box>
           
           <Box w="100%">
-            <Box mb={14} ml={10} w={[900,875,850, 500]}>
+            <Box mb={14} ml={10} w={[900,875,950, 650]}>
               <FirstComponents
                 heading='Stats/ Analytics'
                 svg={<svg xmlns="http://www.w3.org/2000/svg" width="76.28" height="53.913" viewBox="0 0 76.28 53.913">
@@ -169,7 +159,7 @@ export default function Home() {
         </Stack>
       </Box>
 
-      <Box mb={14} w={[1260, 1250]}>
+      <Box mb={14} width='1519px'>
         <Heading mt={20} mb={6} align="center" fontSize={["48","40"]} fontFamily="SegoeUi, Segoe UI" color="#4f60b6">Event guest management images</Heading>
         <Center>
           <Box w={[500, 400, 300]}>
@@ -179,7 +169,7 @@ export default function Home() {
           </Box>
         </Center>
       </Box>
-      <Box mb={14} w={[1260, 1250]}>
+      <Box mb={14} width='1519px'>
           <Heading mt={20} mb={6} align="center" fontSize={['48', '40']} fontFamily="SegoeUi, Segoe UI" color="#4f60b6">Some of the brands that we’ve worked with</Heading>
           <Center>
             <Box mb={12} w={[800, 750,700, 600]}>
@@ -190,7 +180,7 @@ export default function Home() {
             </Box>
           </Center>
           
-          <Wrap ml={['36', '20']} spacing='24px' >
+          <Wrap spacing='34px' justify='center' >
             <WrapItem>
               <Fidelidade/>   
             </WrapItem>  
@@ -230,7 +220,7 @@ export default function Home() {
           
         </Box>
 
-        <Box bg="#EAEAEA" width={[1260, 1250]} height={['455px','395px']} p={4}>
+        <Box bg="#EAEAEA" width='1519px' height={['455px','395px']} p={4}>
           <Heading mt={20} mb={6} align="center" fontSize={["48", "40"]} fontFamily="SegoeUi, Segoe UI" color="#4f60b6">CAN'T FIND WHAT YOU ARE LOOKING FOR?</Heading>
           <Center>
             <Box mb={[6, 3]} w={[700, 650,600, 500]}>
@@ -251,7 +241,7 @@ export default function Home() {
           </Box>  
         </Box>
 
-        <Box bg="#4F60B6" width={[1260, 1250]} height={['335px', '225px']} p={[6,4]}>
+        <Box bg="#4F60B6"  height='230px' width='1519px' p={[6,4]}>
           <Wrap spacing='30px' align='center'>
             <WrapItem>
               <Box w={[280, 200]} h={[120,100]} ml={[12,5]} mt={[12,6]}>
@@ -267,7 +257,7 @@ export default function Home() {
             </WrapItem>
 
             <WrapItem align='flex-end'>
-            <Box w={[490, 460]} h={[150,100]} mt={[12,6]} ml={[0,280]} >
+            <Box w={[490, 460]} h={[150,100]} mt={[12,6]} ml={[0,600]} >
               <VStack align='stretch'>
                 <Box >
                 <Text color='white' fontSize={["18.74", "13.38"]}>

@@ -2,7 +2,7 @@ import { Center } from '@chakra-ui/layout'
 
 function Ba() {
     return (
-        <Center w={['495px','345px']}>
+      <Center bg='#f3f5f7' borderRadius="8.221">
         <svg xmlns="http://www.w3.org/2000/svg" width="363.886" height="140.229" viewBox="0 0 363.886 140.229">
           <rect id="Retângulo_33" data-name="Retângulo 33" width="363.886" height="140.229" rx="8.221" fill="#f3f5f7"/>
           <path id="Caminho_87" data-name="Caminho 87" d="M993.388,3154.513c-2.124-.016-4.248,0-6.371-.011-.329,0-.451.095-.443.437.019.915.026,1.831,0,2.745-.013.412.157.483.515.477,1.08-.017,2.16-.006,3.24-.007,1.044,0,2.087,0,3.131,0a1.781,1.781,0,0,0,.948-.22,1.828,1.828,0,0,0-1.017-3.422Z" transform="translate(-813.934 -3084.49)" fill="#333"/>
