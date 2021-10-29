@@ -29,7 +29,7 @@ export default function Home() {
       {/* Here is the header of the website */}
       <Box w={[1260, 1250]}>
         <div className="page-container-welcome">
-          <Box bgColor='black' opacity='60%' height='645px' width='1215px'>
+          <Box bgColor='black' opacity='60%' height='645px' width='1250px' position='relative'>
             <div className="logo">
               <Box ml='8' mt={[10,6,8]} >
                 <Image src="./logo.png"/>
@@ -297,7 +297,7 @@ export default function Home() {
           </Wrap>
 
           <Box mt={25} mb={6}>
-              <ColoredLine color="white" height={[2,5]}/>
+              <ColoredLine color="white" height={[2,3,4,5]}/>
           </Box>
           <Text color="white" fontSize={["22.76", "13.38"]} fontFamily='Gotham-Book'>@2021 Brand activation by SPIC. All rigths reserved</Text>
         </Box>
